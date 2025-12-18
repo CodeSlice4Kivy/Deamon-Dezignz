@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deamon Dezignz | Mobile Welding & Fabrication</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#020202;
+  --panel:#0b0f0b;
+  --neon:#19ff4f;
+  --neon-soft:rgba(25,255,79,.25);
+  --steel:#1f1f1f;
+  --text:#d1fae5;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background:radial-gradient(circle at top, #041b0b, #000);
+  color:var(--text);
+  font-family:'Rajdhani',sans-serif;
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 10%;
+  background:
+    radial-gradient(circle at center, rgba(25,255,79,.12), transparent 55%);
+}
+
+.hero img{
+  max-width:420px;
+  width:100%;
+  margin-bottom:30px;
+  filter:drop-shadow(0 0 35px var(--neon));
+}
+
+.hero h1{
+  font-family:'Orbitron',sans-serif;
+  font-size:3rem;
+  letter-spacing:2px;
+  text-shadow:0 0 15px var(--neon);
+}
+
+.hero p{
+  max-width:700px;
+  margin:20px auto 30px;
+  font-size:1.1rem;
+  color:#bbf7d0;
+}
+
+.hero a{
+  display:inline-block;
+  padding:16px 38px;
+  border:2px solid var(--neon);
+  color:var(--neon);
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:1px;
+  box-shadow:0 0 25px var(--neon-soft);
+}
+
+.hero a:hover{
+  background:var(--neon);
+  color:#000;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:90px 10%;
+}
+
+.title{
+  font-family:'Orbitron',sans-serif;
+  font-size:2.4rem;
+  text-align:center;
+  margin-bottom:50px;
+  color:var(--neon);
+  text-shadow:0 0 15px var(--neon);
+}
+
+/* ===== SERVICES ===== */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.service{
+  background:linear-gradient(160deg,#040804,#0f1a10);
+  border:1px solid var(--neon-soft);
+  padding:30px;
+  clip-path:polygon(0 0, 95% 0, 100% 15%, 100% 100%, 5% 100%, 0 85%);
+}
+
+.service h3{
+  font-family:'Orbitron',sans-serif;
+  color:var(--neon);
+  margin-bottom:12px;
+}
+
+.service p{
+  color:#a7f3d0;
+}
+
+/* ===== MATERIALS ===== */
+.materials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  justify-content:center;
+}
+
+.material{
+  padding:14px 28px;
+  border:1px solid var(--neon);
+  color:var(--neon);
+  font-weight:700;
+  box-shadow:0 0 18px var(--neon-soft);
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  filter:grayscale(100%) contrast(120%);
+  transition:.4s;
+  border:1px solid #083d1c;
+}
+
+.gallery img:hover{
+  filter:grayscale(0%);
+  box-shadow:0 0 30px var(--neon-soft);
+}
+
+/* ===== CTA ===== */
+.cta{
+  background:
+    radial-gradient(circle at center, rgba(25,255,79,.2), transparent 60%);
+  text-align:center;
+  padding:80px 20px;
+}
+
+.cta h2{
+  font-family:'Orbitron',sans-serif;
+  font-size:2.5rem;
+  color:var(--neon);
+  text-shadow:0 0 20px var(--neon);
+}
+
+.cta p{
+  margin:15px 0 30px;
+}
+
+.cta a{
+  padding:18px 45px;
+  background:var(--neon);
+  color:#000;
+  font-weight:900;
+  text-decoration:none;
+  letter-spacing:1px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#000;
+  color:#6ee7b7;
+  font-size:.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <img src="logo2.png" alt="Deamon Dezignz Logo">
+    <h1>DEAMON DEZIGNZ</h1>
+    <p>
+      Mobile Welder & Fabricator — Pinetown.
+      From gates to chassis repairs, breakdown call-outs and heavy steel fabrication.
+      If it’s steel, we weld it.
+    </p>
+    <a href="https://wa.me/27612672479">EMERGENCY CALL-OUT</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <div class="title">STEEL SERVICES</div>
+  <div class="services">
+    <div class="service"><h3>Gate Manufacture & Repairs</h3><p>Custom steel security and structural work.</p></div>
+    <div class="service"><h3>Vehicle & Chassis Repairs</h3><p>Cars, trucks, trailers & heavy steel frames.</p></div>
+    <div class="service"><h3>Mobile Breakdowns</h3><p>On-site welding when failure is not an option.</p></div>
+    <div class="service"><h3>Custom Fabrication</h3><p>Precision steel built to survive abuse.</p></div>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section>
+  <div class="title">MATERIALS & METHODS</div>
+  <div class="materials">
+    <div class="material">Mild Steel</div>
+    <div class="material">Stainless Steel</div>
+    <div class="material">Cast Iron</div>
+    <div class="material">MIG</div>
+    <div class="material">Stick</div>
+    <div class="material">TIG</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="title">FORGED IN FIRE</div>
+  <div class="gallery">
+    <img src="img/welding1.jpg">
+    <img src="img/welding2.jpg">
+    <img src="img/welding3.jpg">
+    <img src="img/welding4.jpg">
+    <img src="img/welding5.jpg">
+  </div>
+</section>
+
+<section>
+  <div class="title">CONTACT DEAMON DEZIGNZ</div>
+
+  <div style="
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+    border:1px solid rgba(25,255,79,.25);
+    padding:40px;
+    box-shadow:0 0 30px rgba(25,255,79,.15);
+  ">
+
+    <p style="font-size:1.1rem; margin-bottom:20px;">
+      Mobile Welding & Fabrication • Pinetown
+    </p>
+
+    <p>
+      📞 <strong>Phone / WhatsApp:</strong><br>
+      <a href="https://wa.me/27612672479" style="color:#19ff4f; text-decoration:none;">
+        +27 61 267 2479
+      </a>
+    </p>
+
+    <br>
+
+    <p>
+      ✉️ <strong>Email:</strong><br>
+      <a href="mailto:deamondezignz@gmail.com" style="color:#19ff4f; text-decoration:none;">
+        deamondezignz@gmail.com
+      </a>
+    </p>
+
+    <br>
+
+    <p>
+      📍 <strong>Address:</strong><br>
+      34 Leeds Cres,<br>
+      Pinetown, 3600<br>
+      KwaZulu-Natal, South Africa
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 <strong>DEAMON DEZIGNZ</strong><br>
+  Mobile Welder & Fabricator • Pinetown<br>
+  <span style="color:#19ff4f;">
+    deamondezignz@gmail.com • +27 61 267 2479
+  </span>
+</footer>
+
+</body>
+</html>
